@@ -168,6 +168,22 @@
         .card p {
             margin-bottom: 1rem;
         }
+        .news-ticker {
+            background-color: #004080;
+            color: white;
+            padding: 0.5rem;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+        .news-ticker p {
+            display: inline-block;
+            animation: ticker 20s linear infinite;
+        }
+        @keyframes ticker {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
     </style>
 </head>
 <body>
@@ -192,6 +208,10 @@
         <a href="#section2" class="cta-button">Get Started</a>
     </section>
 
+    <div class="news-ticker">
+        <p>Breaking News: Legislative efforts to promote transparency gain traction... | New AI tools help identify media bias... | Activists rally for stronger digital rights protection...</p>
+    </div>
+
     <main>
         <section id="section1">
             <h2>1. Understanding the Political-Tech Landscape</h2>
@@ -206,16 +226,4 @@
                 </ul>
             </div>
             <div class="sub-section">
-                <h3>1.2 Tech Billionaires' Influence</h3>
-                <p>Tech leaders leverage their platforms to affect public discourse through campaign financing, AI strategies, and social media narratives. This section highlights the impact of their influence.</p>
-                <p>Resources:</p>
-                <ul class="resource-list">
-                    <li><a href="https://www.eff.org" target="_blank">Electronic Frontier Foundation: Digital Rights and Tech Power</a></li>
-                    <li><a href="https://www.cfr.org" target="_blank">Council on Foreign Relations: Technology and Power Dynamics</a></li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="section2">
-            <h2>2. Legal Ways to Resist and Advocate</h2>
-            <p
+                <h3>1.2 Tech
