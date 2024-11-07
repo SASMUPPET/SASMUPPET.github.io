@@ -19,7 +19,7 @@
         header {
             background-color: #001f3f;
             color: white;
-            padding: 1.5rem 2rem;
+            padding: 2rem;
             text-align: center;
         }
         header h1 {
@@ -30,7 +30,7 @@
             display: flex;
             justify-content: center;
             background-color: #004080;
-            padding: 0.5rem 0;
+            padding: 0.75rem 0;
         }
         nav ul {
             display: flex;
@@ -51,43 +51,76 @@
             text-decoration: underline;
         }
         .hero-section {
-            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            background: url('https://via.placeholder.com/1600x500') no-repeat center center/cover;
             color: white;
-            padding: 4rem 2rem;
+            padding: 6rem 2rem;
             text-align: center;
         }
         .hero-section h2 {
-            font-size: 2.5rem;
-            margin: 0;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero-section p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .hero-section .cta-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+        }
+        .hero-section .cta-button:hover {
+            background-color: #e67e22;
         }
         main {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 2rem auto;
             padding: 2rem;
             background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
         }
         section {
-            margin-bottom: 2.5rem;
+            margin-bottom: 3rem;
         }
         h2 {
             color: #004080;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+        .sub-section {
+            background-color: #f8f8f8;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
         }
         footer {
             background-color: #001f3f;
             color: white;
             text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
+            padding: 2rem;
+            margin-top: 3rem;
         }
         footer a {
-            color: #4CAF50;
+            color: #f39c12;
             text-decoration: none;
         }
         .resource-list li {
             margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+        .resource-list a {
+            color: #004080;
+            text-decoration: none;
+        }
+        .resource-list a:hover {
+            text-decoration: underline;
         }
         .cta-button {
             display: inline-block;
@@ -105,17 +138,35 @@
         .cta-button:hover {
             background-color: #003366;
         }
-        .sub-section {
-            background-color: #f1f1f1;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-        }
         .highlight {
             background-color: #004080;
             color: white;
             padding: 0.2rem 0.5rem;
             border-radius: 4px;
+        }
+        .interactive-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .card {
+            flex: 1;
+            min-width: 300px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: #004080;
+            margin-bottom: 1rem;
+        }
+        .card p {
+            margin-bottom: 1rem;
         }
     </style>
 </head>
@@ -128,7 +179,7 @@
         <ul>
             <li><a href="#section1">Understanding the Landscape</a></li>
             <li><a href="#section2">Legal Ways to Resist</a></li>
-            <li><a href="#section3">Digital Literacy and Engagement</a></li>
+            <li><a href="#section3">Digital Literacy</a></li>
             <li><a href="#section4">Leveraging AI</a></li>
             <li><a href="#section5">Legal Protections</a></li>
             <li><a href="#section6">Collaboration</a></li>
@@ -138,6 +189,7 @@
     <section class="hero-section">
         <h2>Empowering Citizens for a Transparent Future</h2>
         <p>Understand the influence of tech and political alliances, and learn how to advocate for transparency and fairness.</p>
+        <a href="#section2" class="cta-button">Get Started</a>
     </section>
 
     <main>
@@ -166,28 +218,4 @@
 
         <section id="section2">
             <h2>2. Legal Ways to Resist and Advocate</h2>
-            <p>Engaging in lawful activism can safeguard democracy. This section provides actionable steps for organizing community efforts and advocating for policy change.</p>
-            <div class="sub-section">
-                <h3>2.1 Community Outreach and Public Education</h3>
-                <p>Organize workshops to educate communities on the impact of tech in politics and the importance of transparency. Foster open dialogue and understanding.</p>
-                <p>Resources:</p>
-                <ul class="resource-list">
-                    <li><a href="https://www.aclu.org" target="_blank">ACLU: Resources for Civic Engagement</a></li>
-                    <li><a href="https://www.commoncause.org" target="_blank">Common Cause: Advocating for Open Democracy</a></li>
-                </ul>
-                <a href="https://www.commoncause.org" target="_blank" class="cta-button">Join an Advocacy Group</a>
-            </div>
-            <div class="sub-section">
-                <h3>2.2 Participating in Policy Discussions</h3>
-                <p>Contribute to public policy discussions by submitting comments and participating in public consultations. Citizen input is essential for shaping democratic policy.</p>
-                <p>Resources:</p>
-                <ul class="resource-list">
-                    <li><a href="https://www.regulations.gov" target="_blank">Regulations.gov: Public Comments Portal</a></li>
-                    <li><a href="https://www.congress.gov" target="_blank">Congress.gov: Legislative Process and Updates</a></li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="section3">
-            <h2>3. Digital Literacy and Civic Engagement</h2>
-            <p>Digital literacy equips citizens to discern credible information from propaganda. This section outlines
+            <p
